@@ -6,47 +6,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rincón Café</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><h1>Rincón Café</h1></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sedes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contáctanos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+      <nav class="container-fluid navbar navbar-expand-lg">
+        <div class="container-fluid p-2 bg-white">
+          <a class="navbar-logo mx-3" href="#"> <img class="logo-img" src="img/logo.jpg" alt="..."> </a>
+          <a class="navbar-brand" href="#"> <h1> Sabaneta Café</h1> </a>
+          <nav class="navbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </nav>
 
-
+          <div
+            class="collapse navbar-collapse ms-3"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sedes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
+    <main>
+      <div class="">
+        <h2 class="text-center p-2">Nuestros Últimos Eventos!</h2>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/carousel1.jpg"
+                class="d-block imgCarousel"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carousel2.jpg"
+                class="d-block imgCarousel"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/carousel3.jpg"
+                class="d-block imgCarousel"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
+      <div class="secciones col-xl-12 col-md-12 col-sm-12 d-flex">
+        <div class="d-flex flex-column align-items-center justify-content-center p-5">
+          <h3>Quiénes somos?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            accusantium atque commodi dolor quibusdam voluptate asperiores iusto
+            harum? Nobis animi vitae iusto omnis beatae iure minus
+            necessitatibus quos voluptates laudantium delectus ab est totam sed
+            nihil, laboriosam nulla vero accusamus numquam quisquam sapiente
+            eos! Unde, porro illo minus mollitia nihil dicta error voluptates
+            earum rem ducimus cupiditate id debitis iure animi impedit commodi!
+            Sunt ipsam laudantium iste hic architecto, sint id nisi iure officia
+            dignissimos est molestias suscipit fugiat quaerat eius repellat odio
+            soluta possimus similique, reiciendis commodi! Obcaecati, molestias
+            cum numquam unde assumenda quisquam minus repellendus quam pariatur
+            odio.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-4"><img src="img/carousel2.jpg" alt="..."></div>
+      </div>
+
+      <div class="secciones col-xl-12 col-md-12 col-sm-12 d-flex">
+        <div class="d-flex justify-content-center align-items-center p-4"><img src="img/carousel2.jpg" alt="..."></div>
+        <div class="d-flex flex-column align-items-center justify-content-center p-5">
+          <h3>Qué ofrecemos?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            accusantium atque commodi dolor quibusdam voluptate asperiores iusto
+            harum? Nobis animi vitae iusto omnis beatae iure minus
+            necessitatibus quos voluptates laudantium delectus ab est totam sed
+            nihil, laboriosam nulla vero accusamus numquam quisquam sapiente
+            eos! Unde, porro illo minus mollitia nihil dicta error voluptates
+            earum rem ducimus cupiditate id debitis iure animi impedit commodi!
+            Sunt ipsam laudantium iste hic architecto, sint id nisi iure officia
+            dignissimos est molestias suscipit fugiat quaerat eius repellat odio
+            soluta possimus similique, reiciendis commodi! Obcaecati, molestias
+            cum numquam unde assumenda quisquam minus repellendus quam pariatur
+            odio.
+          </p>
+        </div>
+      </div>
+<div class="text-center mt-3"><h3>Conoce algunos de nuestros mejores productos!</h3></div>
+      <div class="row products my-5">
+        <div class="card col-xl-2 col-md-5 col-sm-12">
+          <img src="img/carousel1.jpg" alt="">
+          <div class="card-body">
+            <h4>Titulo</h4>  
+            <p>Descripción del producto</p>
+            <button class="btn addCart">Añadir al Carrito</button>
+            <button class="btn addCart">Comprar</button>
+          </div>
+        </div>
+        <div class="card col-xl-2 col-md-5 col-sm-12">
+          <img src="img/carousel1.jpg" alt="">
+          <div class="card-body">
+            <h4>Titulo</h4>  
+            <p>Descripción del producto</p>
+            <button class="btn addCart">Añadir al Carrito</button>
+            <button class="btn addCart">Comprar</button>
+          </div>
+        </div>
+        <div class="card col-xl-2 col-md-5 col-sm-12">
+          <img src="img/carousel1.jpg" alt="">
+          <div class="card-body">
+            <h4>Titulo</h4>  
+            <p>Descripción del producto</p>
+            <button class="btn addCart">Añadir al Carrito</button>
+            <button class="btn addCart">Comprar</button>
+          </div>
+        </div>
+        <div class="card col-xl-2 col-md-5 col-sm-12">
+          <img src="img/carousel1.jpg" alt="">
+          <div class="card-body">
+            <h4>Titulo</h4>  
+            <p>Descripción del producto</p>
+            <button class="btn addCart">Añadir al Carrito</button>
+            <button class="btn addCart">Comprar</button>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="mt-5">
+          <div class="row justify-content-evenly">
+              <div class="col-xl-3 col-md-3 col-sm-12 mb-4 ms-5">
+                  <h4>Sabaneta Café </h4>
+                  <p class="pt-3">
+                      Todos los derechos reservados. Copyright 2023
+
+                  </p>
+                  <span class="social">
+                      <i class="bi bi-instagram px-2"></i>
+                  </span>
+                  <span class="social">
+                      <i class="bi bi-facebook px-2"></i>
+                  </span>
+                  <span class="social">
+                      <i class="bi bi-whatsapp px-2"></i>
+                  </span>
+                  <span class="social">
+                      <i class="bi bi-twitter px-2"></i>
+                  </span>
+              </div>
+
+              <div class="col-xl-3 col-md-3 col-sm-12 mb-3 ms-5">
+                  <h5 class="pb-3 d-sm-block">Links de interés</h5>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Nosotros</span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Preguntas Frecuentes</span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Políticas de Privacidad</span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Términos y Condiciones </span></p>
+              </div>
+
+              <div class="col-xl-3 col-md-3 col-sm-12 ms-5">
+                  <h5 class="pb-3 d-sm-block"> Contáctanos</h5>
+                  <p class="link pt-2"><span> <i class="bi bi-envelope-at"></i> sabanetacafe@gmail.com </span> </p>
+                  <p class="link pt-2"> <span> <i class="bi bi-telephone-forward"></i> +57 (302) 302-2238 </span></p>
+              </div>
+
+          </div>
+
+
+      </div>
+      </div>
+
+
+
+  </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
