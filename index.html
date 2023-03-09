@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -35,23 +36,23 @@
           </nav>
 
           <div
-            class="collapse navbar-collapse bg-brown"
+            class="collapse navbar-collapse bg-brown navbarExpanded"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item ms-3">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Inicio</a>
               </li>
-              <li class="nav-item ms-3">
+              <li class="nav-item">
                 <a class="nav-link" href="html/products.html">Productos/Servicios</a>
               </li>
-              <li class="nav-item ms-3">
+              <li class="nav-item">
                 <a class="nav-link" href="html/sedes.html">Sedes</a>
               </li>
-              <li class="nav-item ms-3">
+              <li class="nav-item ">
                 <a class="nav-link" href="html/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item mx-3">
+              <li class="nav-item me-3">
                 <a class="nav-link" href="html/contacto.html">Contáctanos</a>
               </li>
             </ul>
@@ -59,7 +60,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <div class="py-5">
         <h2 class="text-center p-2 mb-3">Bienvenidos a la página oficial de Sabaneta Café</h2>
@@ -110,9 +110,9 @@
 
       <div class="d-flex flex-column container-fluid p-5">
       <div class="secciones row mb-4">
-        <div class="d-flex flex-column align-items-center justify-content-center px-5 pt-5 col-xl-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-column align-items-center justify-content-center px-5 pt-5 col-xl-6 col-md-6 col-sm-12 sectionBody">
           <a href="html/nosotros.html"><h3 class="mb-4">Quiénes somos?</h3></a>
-          <p>
+          <p class="p-animation">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
             accusantium atque commodi dolor quibusdam voluptate asperiores iusto
             harum? Nobis animi vitae iusto omnis beatae iure minus
@@ -132,7 +132,7 @@
 
       <div class="secciones row">
         <div class="p-4 col-xl-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center"><img class="img-fluid" src="img/carousel2.jpg" alt="..."></div>
-        <div class="d-flex flex-column align-items-center justify-content-center px-5 pt-2 col-xl-6 col-md-6 col-sm-12 mb-3">
+        <div class="d-flex flex-column align-items-center justify-content-center px-5 pt-2 col-xl-6 col-md-6 col-sm-12 mb-3 sectionBody">
           <a href="html/products.html"><h3 class="mb-4">Quiénes somos?</h3></a>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
@@ -156,7 +156,7 @@
       <div class="row products container-fluid align-items-center justify-content-center px-5 py-3">
 
         <div class="card col-xl-3 col-md-5 col-sm-12 m-3">
-          <img class="p-3 img-fluid" src="img/carousel1.jpg" alt="">
+          <img class="px-3 pt-3 img-fluid" src="img/carousel1.jpg" alt="">
           <div class="card-body">
             <h5 class="text-center">Café instantáneo</h5>  
             <p class="text-center">100gr de café instantáneo seleccionado de alta calidad.</p>
@@ -168,7 +168,7 @@
         </div>
 
         <div class="card col-xl-3 col-md-5 col-sm-12 m-3">
-          <img class="p-3 img-fluid" src="img/carousel1.jpg" alt="">
+          <img class="px-3 pt-3 img-fluid" src="img/carousel1.jpg" alt="">
           <div class="card-body">
             <h5 class="text-center">Café instantáneo</h5>  
             <p class="text-center">100gr de café instantáneo seleccionado de alta calidad.</p>
@@ -180,7 +180,7 @@
         </div>
 
         <div class="card col-xl-3 col-md-5 col-sm-12 m-3">
-          <img class="p-3 img-fluid" src="img/carousel1.jpg" alt="">
+          <img class="px-3 pt-3 img-fluid" src="img/carousel1.jpg" alt="">
           <div class="card-body">
             <h5 class="text-center">Café instantáneo</h5>  
             <p class="text-center">100gr de café instantáneo seleccionado de alta calidad.</p>
@@ -192,7 +192,7 @@
         </div>
 
         <div class="card col-xl-3 col-md-5 col-sm-12 m-3">
-          <img class="p-3 img-fluid" src="img/carousel1.jpg" alt="">
+          <img class="px-3 pt-3 img-fluid" src="img/carousel1.jpg" alt="">
           <div class="card-body">
             <h5 class="text-center">Café instantáneo</h5>  
             <p class="text-center">100gr de café instantáneo seleccionado de alta calidad.</p>
@@ -204,7 +204,7 @@
         </div>
 
         <div class="card col-xl-3 col-md-5 col-sm-12 m-3">
-          <img class="p-3 img-fluid" src="img/carousel1.jpg" alt="">
+          <img class="px-3 pt-3 img-fluid" src="img/carousel1.jpg" alt="">
           <div class="card-body">
             <h5 class="text-center">Café instantáneo</h5>  
             <p class="text-center">100gr de café instantáneo seleccionado de alta calidad.</p>
@@ -229,31 +229,31 @@
 
                   </p>
                   <span class="social">
-                      <i class="bi bi-instagram px-2"></i>
+                      <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram px-2"></i></a>
                   </span>
                   <span class="social">
-                      <i class="bi bi-facebook px-2"></i>
+                    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook px-2"></i></a>
                   </span>
                   <span class="social">
-                      <i class="bi bi-whatsapp px-2"></i>
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp px-2"></i></a>
                   </span>
                   <span class="social">
-                      <i class="bi bi-twitter px-2"></i>
+                    <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter px-2"></i></a>
                   </span>
               </div>
 
               <div class="col-xl-2 col-md-3 col-sm-12 mb-3">
                   <h5 class="pb-3 d-sm-block">Links de interés</h5>
-                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Nosotros</span></p>
-                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Preguntas Frecuentes</span></p>
-                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Políticas de Privacidad</span></p>
-                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i> Términos y Condiciones </span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i><a href="/html/nosotros.html"> Nosotros</a></span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i><a href="#"> Preguntas Frecuentes</a></span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i><a href="#"> Políticas de Privacidad</a></span></p>
+                  <p class="link"> <span> <i class="bi bi-arrow-right-short"></i><a href="#"> Términos y Condiciones</a></span></p>
               </div>
 
               <div class="col-xl-2 col-md-3 col-sm-12">
                   <h5 class="pb-3 d-sm-block"> Contáctanos</h5>
-                  <p class="link"><span> <i class="bi bi-envelope-at"></i> sabanetacafe@gmail.com </span> </p>
-                  <p class="link"> <span> <i class="bi bi-telephone-forward"></i> +57 (302) 302-2238 </span></p>
+                  <p class="link"><span> <i class="bi bi-envelope-at"></i> <a href="mailto: sabanetacafe@gmail.com"> sabanetacafe@gmail.com </a></span> </p>
+                  <p class="link"> <span> <i class="bi bi-telephone-forward"></i><a href="tel: +573023022238">  +57 (302) 302-2238 </a></span></p>
               </div>
 
               <div class="d-flex flex-column col-xl-3 col-md-3 col-sm-12 align-items-center justify-content-center">
@@ -265,7 +265,7 @@
       </div>
 
       <div class="botonWhatsApp">
-        <img src="img/logoWhatsapp.png" alt="">
+        <a href="https://www.whatsapp.com" target="_blank"><img src="img/logoWhatsapp.png" alt=""></a>
     </div>
 
   </footer>

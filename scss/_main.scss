@@ -1,18 +1,16 @@
 main {
-  background-color: bisque;
-  color: $darkgray;
+  background-image: radial-gradient(ellipse 100% 100%,bisque,bisque,white);
+  @include bg-color(bisque,$darkgray);
 
   .equipo {
     h3 {
-      background-color: #60463b;
-      color: bisque;
+      @extend .brownBisque;
     }
   }
 
   form{
     fieldset {
-    background-color: $darkgray;
-    color: bisque;
+      @include bg-color($darkgray, bisque)
   }
 }
   .secciones {
@@ -24,6 +22,9 @@ main {
       text-align: justify;
     }
     background-color: $darkgray;
+    a:hover{
+        color:$lightpurple;
+      }
   }
 
   .servicios {
@@ -33,11 +34,13 @@ main {
     background-color: white;
     border-radius: 15px;
     padding: 40px;
+    &:hover{
+      @include bg-color($chocolate, bisque);
+  }
   }
 
   .brownBisque {
-    background-color: #60463b;
-    color: bisque;
+    @include bg-color(#60463b,bisque)
   }
 
   .rebootMargin {
@@ -45,8 +48,10 @@ main {
   }
 
   .cardTitle {
-    background-color: #60463b;
-    color: bisque;
+    @extend .brownBisque;
+    a:hover{
+      color: $lightpurple;
+    }
   }
 
   .products {
@@ -87,8 +92,7 @@ main {
   }
 
   .tituloSede{
-    background-color: #2e3138;
-    color: bisque;
+    @include bg-color(#2e3138,bisque);
 }
 
 @media (max-width: 992px) {

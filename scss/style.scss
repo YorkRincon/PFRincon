@@ -1,4 +1,103 @@
-@import "variables", "header","main","footer","general","fonts";
+@import "variables", "header", "main", "footer", "general", "fonts";
 
+header{
+    @keyframes titulo {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    h1 {
+        animation-name: titulo;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+}
+
+main {
+
+  @media (max-width:"992px"){
+    .secciones{
+        .sectionBody{
+          font-size: 0.8rem;
+        }
+    }
+  }
+    .carousel{
+        animation-name: animacion;
+        animation: fadeIn;
+        animation-duration: 3s;
+    }
+
+@keyframes animacion {
+}
+
+h2:hover {
+    animation-name: animacion;
+    animation: bounce;
+    animation-duration: 1.5s;
+}
+
+  .card {
+    &:hover {
+      @include bg-color($darkgray, $lightpurple);
+    }
+    border-radius: 10px;
+  }
+  .personas:hover {
+    transform: scale(1.01, 1.01);
+  }
+}
+
+header {
+  .headerNavbar {
+    .navbar-nav {
+      .nav-item:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}
+
+.cardTitle {
+  a {
+    h3:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+footer {
+  .footer {
+    h4:hover {
+      color: $lightpurple;
+    }
+    h5:hover {
+      color: $lightpurple;
+    }
+
+    i:hover {
+      color: $lightpurple;
+    }
+  }
+  .link:hover {
+    transform: translate(10px, 0px);
+    transform: scale(1.01, 1.01);
+  }
+}
+
+.form-button {
+    &:hover {
+        transform: translateY(-3px);
+      }
+  &:active {
+    transform: translateY(3px);
+  }
+
+}
 
 

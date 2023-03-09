@@ -31,20 +31,27 @@ header .headerNavbar ul li {
 header .headerNavbar ul li a {
   color: bisque;
 }
-header .headerNavbar ul li a:hover {
+header .headerNavbar ul li ahover {
   color: #ccc9e7;
 }
 header .headerNavbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 228, 196, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+header .nav-link:hover {
+  color: bisque;
+}
+@media (max-width: 992px) {
+  header .navbarExpanded .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 main {
+  background-image: radial-gradient(ellipse 100% 100%, bisque, bisque, white);
   background-color: bisque;
   color: #2e3138;
-}
-main .equipo h3 {
-  background-color: #60463b;
-  color: bisque;
 }
 main form fieldset {
   background-color: #2e3138;
@@ -60,6 +67,9 @@ main .secciones {
 main .secciones p {
   text-align: justify;
 }
+main .secciones a:hover {
+  color: #ccc9e7;
+}
 main .servicios {
   background-color: white;
   border-radius: 15px;
@@ -68,16 +78,19 @@ main .servicios {
 main .servicios p {
   text-align: justify;
 }
-main .brownBisque {
+main .servicios:hover {
+  background-color: #60463b;
+  color: bisque;
+}
+main .brownBisque, main .cardTitle, main .equipo h3 {
   background-color: #60463b;
   color: bisque;
 }
 main .rebootMargin {
   margin: 0;
 }
-main .cardTitle {
-  background-color: #60463b;
-  color: bisque;
+main .cardTitle a:hover {
+  color: #ccc9e7;
 }
 main .products {
   justify-content: space-evenly;
@@ -250,6 +263,76 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+header h1 {
+  animation-name: titulo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@media (max-width: 992px) {
+  main .secciones .sectionBody {
+    font-size: 0.8rem;
+  }
+}
+main .carousel {
+  animation-name: animacion;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+@keyframes animacion {}
+main h2:hover {
+  animation-name: animacion;
+  animation: bounce;
+  animation-duration: 1.5s;
+}
+main .card {
+  border-radius: 10px;
+}
+main .card:hover {
+  background-color: #2e3138;
+  color: #ccc9e7;
+}
+main .personas:hover {
+  transform: scale(1.01, 1.01);
+}
+
+header .headerNavbar .navbar-nav .nav-item:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cardTitle a h3:hover {
+  transform: scale(1.1, 1.1);
+}
+
+footer .footer h4:hover {
+  color: #ccc9e7;
+}
+footer .footer h5:hover {
+  color: #ccc9e7;
+}
+footer .footer i:hover {
+  color: #ccc9e7;
+}
+footer .link:hover {
+  transform: translate(10px, 0px);
+  transform: scale(1.01, 1.01);
+}
+
+.form-button:hover {
+  transform: translateY(-3px);
+}
+.form-button:active {
+  transform: translateY(3px);
 }
 
 /*# sourceMappingURL=style.css.map */

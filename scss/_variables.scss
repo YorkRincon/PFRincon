@@ -7,3 +7,9 @@ $darkgray: #2e3138;
 .bg-brown {
     background-color: $chocolate;
   }
+  
+  @mixin bg-color ($backgroundcolor, $color)
+  {
+    background-color: $backgroundcolor;
+    color: $color;
+  }
