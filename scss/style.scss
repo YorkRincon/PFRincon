@@ -1,104 +1,303 @@
-header {    
-    .headerNavbar{
-    h1{
-        margin:0;
-    }
+//pallette #1 //
+$chocolate: #60463b;
+$lightbrown: #856a5d;
+$lightpurple: #ccc9e7;
+$gray: #6c6f7d;
+$darkgray: #2e3138;
+// fin de pallette #1 //
 
-    img{
-        width: 90px;
-    }
-}
+a{
+   text-decoration: none;
+   color: bisque;
 }
 
 header {
-    height: 120px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  background-color: $chocolate;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .headerNavbar {
+    padding: 0;
+
+    h1 {
+      margin: 0;
+      color: bisque;
+    }
+    h1:hover{
+        color: $lightpurple;
+    }
+
+    img {
+      width: 90px;
+    }
+
+    ul {
+      li {
+        font-size: 1.2rem;
+        a {
+          color: bisque;
+        }
+        a:hover{
+            color:$lightpurple;
+        }
+      }
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 228, 196, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  .bg-brown {
+    background-color: $chocolate;
+  }
 }
 
-main{
-    .secciones{
-        p{
-            text-align: justify;
+main {
+  background-color: bisque;
+  color: $darkgray;
+
+
+    .equipo{
+        h3{
+            background-color: #60463b;
+            color: bisque;
         }
     }
 
-.primerServicio{
-    p{
-        text-align: justify;
-    }
-}
-}   
-    
+  fieldset{
+    background-color: $darkgray;
+    color: bisque;
+  }
 
-.secciones{
-    img{
-        width: 100%;
-        height:100%;
+  .secciones {
+    color: bisque;
+    p {
+      text-align: justify;
     }
+    background-color: $darkgray;
+  }
+
+  .servicios {
+    p {
+      text-align: justify;
+    }
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+  }
+
+.brownBisque{
+    background-color: #60463b;
+    color: bisque;
 }
 
-.carousel-item{
-    img{
-        width:100%;
-        height: 500px;
-    }
-}
-
-.products{
-    justify-content: space-evenly;
+.rebootMargin {
     margin:0;
-    padding:0;
-
-    img{
-        border-radius: 30px;
-    }
 }
 
-ul {
-    li{
-        font-size: 1.2rem;
-    }
+  .cardTitle {
+    background-color: #60463b;
+    color: bisque;
+  }
 }
 
-.footer {
-    margin:0;
-    padding:0;
+.secciones {
+  box-shadow: 5px 9px 11px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  img {
+
+  }
+}
+
+//Cambio de tamaño del carousel usando @media//
+
+@media (max-width: 992px) {
+  .carousel-item {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.mision {
+    background-color: $darkgray;
+    color: bisque;
+    width: 80%;
+}
+
+.vision {
+    background-color: $darkgray;
+    color: bisque;
+    width: 80%;
+
+}
+
+@media (min-width: 993px) {
+  .carousel-item {
+    img {
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+  .mision {
+    background-color: $darkgray;
+    color: bisque;
+    width: 40%;
+}
+
+.vision {
+    background-color: $darkgray;
+    color: bisque;
+    width: 40%;
+}
+
+}
+
+//Fin de cambio de tamaño usando @media//
+
+.products {
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+
+  img {
+    border-radius: 30px;
+  }
+}
+
+footer {
+  background-color: #60463b;
+  color: bisque;
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // carousel //
 
 .cards-wrapper {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
   .card img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 20em;
+
   }
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-  }
-  .carousel-inner {
-    padding: 1em;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  @media (min-width: 768px) {
-    .card img {
-      height: 20em;
+}
+
+
+@media (min-width:769px) and (max-width:1400px){
+    .card3{
+        display: none!important;
     }
-  }
+    .card6{
+        display: none!important;
+    }
+    .card9{
+        display: none!important;
+    }
+    .cards-wrapper-products{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card1{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card2{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card4{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card5{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card7{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card8{
+        width: 40%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.tituloSede{
+    background-color: #2e3138;
+    color: bisque;
+}
+
+.botonWhatsApp {
+    img {
+        width: 70px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}

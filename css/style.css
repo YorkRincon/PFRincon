@@ -1,11 +1,10 @@
-header .headerNavbar h1 {
-  margin: 0;
-}
-header .headerNavbar img {
-  width: 90px;
+a {
+  text-decoration: none;
+  color: bisque;
 }
 
 header {
+  background-color: #60463b;
   height: 120px;
   display: flex;
   align-items: center;
@@ -13,24 +12,113 @@ header {
   top: 0;
   z-index: 2;
 }
+header .headerNavbar {
+  padding: 0;
+}
+header .headerNavbar h1 {
+  margin: 0;
+  color: bisque;
+}
+header .headerNavbar h1:hover {
+  color: #ccc9e7;
+}
+header .headerNavbar img {
+  width: 90px;
+}
+header .headerNavbar ul li {
+  font-size: 1.2rem;
+}
+header .headerNavbar ul li a {
+  color: bisque;
+}
+header .headerNavbar ul li a:hover {
+  color: #ccc9e7;
+}
+header .headerNavbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 228, 196, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header .bg-brown {
+  background-color: #60463b;
+}
 
+main {
+  background-color: bisque;
+  color: #2e3138;
+}
+main .equipo h3 {
+  background-color: #60463b;
+  color: bisque;
+}
+main fieldset {
+  background-color: #2e3138;
+  color: bisque;
+}
+main .secciones {
+  color: bisque;
+  background-color: #2e3138;
+}
 main .secciones p {
   text-align: justify;
 }
-main .primerServicio p {
+main .servicios {
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px;
+}
+main .servicios p {
   text-align: justify;
 }
-
-.secciones img {
-  width: 100%;
-  height: 100%;
+main .brownBisque {
+  background-color: #60463b;
+  color: bisque;
+}
+main .rebootMargin {
+  margin: 0;
+}
+main .cardTitle {
+  background-color: #60463b;
+  color: bisque;
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 500px;
+.secciones {
+  box-shadow: 5px 9px 11px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+@media (max-width: 992px) {
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.mision {
+  background-color: #2e3138;
+  color: bisque;
+  width: 80%;
 }
 
+.vision {
+  background-color: #2e3138;
+  color: bisque;
+  width: 80%;
+}
+
+@media (min-width: 993px) {
+  .carousel-item img {
+    width: 100%;
+    height: 600px;
+  }
+  .mision {
+    background-color: #2e3138;
+    color: bisque;
+    width: 40%;
+  }
+  .vision {
+    background-color: #2e3138;
+    color: bisque;
+    width: 40%;
+  }
+}
 .products {
   justify-content: space-evenly;
   margin: 0;
@@ -40,11 +128,11 @@ main .primerServicio p {
   border-radius: 30px;
 }
 
-ul li {
-  font-size: 1.2rem;
+footer {
+  background-color: #60463b;
+  color: bisque;
 }
-
-.footer {
+footer .footer {
   margin: 0;
   padding: 0;
 }
@@ -84,6 +172,81 @@ ul li {
   .card img {
     height: 20em;
   }
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+  .card3 {
+    display: none !important;
+  }
+  .card6 {
+    display: none !important;
+  }
+  .card9 {
+    display: none !important;
+  }
+  .cards-wrapper-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card1 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card2 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card4 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card5 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card7 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card8 {
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.tituloSede {
+  background-color: #2e3138;
+  color: bisque;
+}
+
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
