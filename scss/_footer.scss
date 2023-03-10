@@ -1,4 +1,21 @@
 footer {
+  .footer {
+    h4:hover {
+      color: $lightpurple;
+    }
+    h5:hover {
+      color: $lightpurple;
+    }
+
+    i:hover {
+      color: $lightpurple;
+    }
+  }
+  .link:hover {
+    transform: translate(10px, 0px);
+    transform: scale(1.01, 1.01);
+  }
+
   background-color: #60463b;
   color: bisque;
   .footer {

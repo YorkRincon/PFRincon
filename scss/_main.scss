@@ -1,4 +1,62 @@
 main {
+  .personas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cardTitle {
+    a {
+      h3:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+  
+  .form-button {
+      &:hover {
+          transform: translateY(-3px);
+        }
+    &:active {
+      transform: translateY(3px);
+    }
+  
+  }
+
+  @media (max-width:"992px"){
+    .secciones{
+        .sectionBody{
+          font-size: 0.8rem;
+        }
+    }
+  }
+    .carousel{
+        animation-name: animacion;
+        animation: fadeIn;
+        animation-duration: 3s;
+    }
+
+@keyframes animacion {
+}
+
+h2:hover {
+    animation-name: animacion;
+    animation: bounce;
+    animation-duration: 1.5s;
+}
+
+  .card {
+    &:hover {
+      @include bg-color($darkgray, $lightpurple);
+    }
+    border-radius: 10px;
+  }
+  
+  .personas:hover {
+    transform: scale(1.01, 1.01);
+  }
+// * //
   background-image: radial-gradient(ellipse 100% 100%,bisque,bisque,white);
   @include bg-color(bisque,$darkgray);
 
@@ -118,7 +176,7 @@ main {
   .carousel-item {
     img {
       width: 100%;
-      height: 600px;
+      height: 650px;
     }
   }
   .mision {

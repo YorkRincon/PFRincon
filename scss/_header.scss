@@ -1,4 +1,38 @@
 header {
+  @media (max-width:440px){
+    .headerNavbar{
+        display: flex;
+        justify-content: center;
+        .navbar-logo{
+            display: none;
+        }
+    }
+
+    .navbar>.container-fluid{
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+}
+}
+
+  @keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+h1 {
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
     background-color: $chocolate;
     height: 120px;
     display: flex;
@@ -9,7 +43,11 @@ header {
   
     .headerNavbar {
       padding: 0;
-  
+      .navbar-nav {
+        .nav-item:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
       h1 {
         margin: 0;
         color: bisque;

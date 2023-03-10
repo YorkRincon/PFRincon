@@ -12,8 +12,40 @@ header {
   top: 0;
   z-index: 2;
 }
+@media (max-width: 440px) {
+  header .headerNavbar {
+    display: flex;
+    justify-content: center;
+  }
+  header .headerNavbar .navbar-logo {
+    display: none;
+  }
+  header .navbar > .container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+header h1 {
+  animation-name: titulo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
 header .headerNavbar {
   padding: 0;
+}
+header .headerNavbar .navbar-nav .nav-item:hover {
+  transform: scale(1.1, 1.1);
 }
 header .headerNavbar h1 {
   margin: 0;
@@ -52,6 +84,47 @@ main {
   background-image: radial-gradient(ellipse 100% 100%, bisque, bisque, white);
   background-color: bisque;
   color: #2e3138;
+}
+main .personas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .cardTitle a h3:hover {
+  transform: scale(1.1, 1.1);
+}
+main .form-button:hover {
+  transform: translateY(-3px);
+}
+main .form-button:active {
+  transform: translateY(3px);
+}
+@media (max-width: 992px) {
+  main .secciones .sectionBody {
+    font-size: 0.8rem;
+  }
+}
+main .carousel {
+  animation-name: animacion;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+@keyframes animacion {}
+main h2:hover {
+  animation-name: animacion;
+  animation: bounce;
+  animation-duration: 1.5s;
+}
+main .card {
+  border-radius: 10px;
+}
+main .card:hover {
+  background-color: #2e3138;
+  color: #ccc9e7;
+}
+main .personas:hover {
+  transform: scale(1.01, 1.01);
 }
 main form fieldset {
   background-color: #2e3138;
@@ -149,7 +222,7 @@ main .vision {
 @media (min-width: 993px) {
   main .carousel-item img {
     width: 100%;
-    height: 600px;
+    height: 650px;
   }
   main .mision {
     background-color: #2e3138;
@@ -236,6 +309,19 @@ footer {
   background-color: #60463b;
   color: bisque;
 }
+footer .footer h4:hover {
+  color: #ccc9e7;
+}
+footer .footer h5:hover {
+  color: #ccc9e7;
+}
+footer .footer i:hover {
+  color: #ccc9e7;
+}
+footer .link:hover {
+  transform: translate(10px, 0px);
+  transform: scale(1.01, 1.01);
+}
 footer .footer {
   margin: 0;
   padding: 0;
@@ -263,76 +349,6 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
-}
-
-@keyframes titulo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-header h1 {
-  animation-name: titulo;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@media (max-width: 992px) {
-  main .secciones .sectionBody {
-    font-size: 0.8rem;
-  }
-}
-main .carousel {
-  animation-name: animacion;
-  animation: fadeIn;
-  animation-duration: 3s;
-}
-@keyframes animacion {}
-main h2:hover {
-  animation-name: animacion;
-  animation: bounce;
-  animation-duration: 1.5s;
-}
-main .card {
-  border-radius: 10px;
-}
-main .card:hover {
-  background-color: #2e3138;
-  color: #ccc9e7;
-}
-main .personas:hover {
-  transform: scale(1.01, 1.01);
-}
-
-header .headerNavbar .navbar-nav .nav-item:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.cardTitle a h3:hover {
-  transform: scale(1.1, 1.1);
-}
-
-footer .footer h4:hover {
-  color: #ccc9e7;
-}
-footer .footer h5:hover {
-  color: #ccc9e7;
-}
-footer .footer i:hover {
-  color: #ccc9e7;
-}
-footer .link:hover {
-  transform: translate(10px, 0px);
-  transform: scale(1.01, 1.01);
-}
-
-.form-button:hover {
-  transform: translateY(-3px);
-}
-.form-button:active {
-  transform: translateY(3px);
 }
 
 /*# sourceMappingURL=style.css.map */
