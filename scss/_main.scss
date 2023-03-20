@@ -1,4 +1,5 @@
 main {
+
   .personas{
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@ main {
   
   .cardTitle {
     a {
-      h3:hover {
+      h2:hover {
         transform: scale(1.1, 1.1);
       }
     }
@@ -25,9 +26,24 @@ main {
   }
 
   @media (max-width:"992px"){
+    h1{
+      font-size:1.7rem;
+    }
+    .cardTitle{
+      a{
+        h2{
+          font-size: 1.5rem;
+        }
+      }
+    }
     .secciones{
         .sectionBody{
           font-size: 0.8rem;
+          a{
+            h2{
+              font-size: 1.4rem;
+            }
+          }
         }
     }
   }
@@ -40,7 +56,7 @@ main {
 @keyframes animacion {
 }
 
-h2:hover {
+h1:hover {
     animation-name: animacion;
     animation: bounce;
     animation-duration: 1.5s;
@@ -61,7 +77,7 @@ h2:hover {
   @include bg-color(bisque,$darkgray);
 
   .equipo {
-    h3 {
+    h2 {
       @extend .brownBisque;
     }
   }
@@ -120,6 +136,11 @@ h2:hover {
     img {
       border-radius: 30px;
     }
+
+    h3{
+      font-size: 1.4rem;
+    }
+
   }
 
   .cards-wrapper {
@@ -154,7 +175,7 @@ h2:hover {
 }
 
 @media (max-width: 992px) {
-  .carousel-item {
+  .carouselItem-index {
     img {
       width: 100%;
       height: 100%;
@@ -172,13 +193,32 @@ h2:hover {
     width: 80%;
 
 }
-@media (min-width: 993px) {
-  .carousel-item {
+
+
+
+@media (min-width: 993px) and (max-width:1668px){
+  .carouselItem-index {
     img {
-      width: 100%;
-      height: 650px;
+      width: 80%;
+      height: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
+}
+
+@media (min-width: 1669px){
+  .carouselItem-index {
+    img {
+      width: 70%;
+      height: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: 993px) {
   .mision {
     background-color: $darkgray;
     color: bisque;
@@ -196,6 +236,61 @@ h2:hover {
 
   }
 }
+
+@media (min-width: 768px) and (max-width:1164px) {
+
+  .body1{
+    padding-bottom: 1rem;
+  }
+
+.body2{
+  padding-top: 1rem;
+}
+}
+
+
+@media (min-width: 768px) and (max-width:1164px) {
+
+  .body1{
+    padding-bottom: 1rem;
+  }
+
+.body2{
+  padding-top: 1rem;
+}
+}
+
+@media (min-width: 1123px) {
+  
+  .sectionBody{
+    p{
+      font-size: 1.1rem;
+    }
+  }
+  .body2{
+    padding-top:1rem;
+  }
+
+}
+
+@media (min-width: 1350px) {
+  
+  .sectionBody{
+    p{
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 1660px) {
+  
+  .sectionBody{
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}
+
 @media (min-width:769px) and (max-width:1400px){
     .card3{
         display: none!important;

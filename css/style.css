@@ -12,6 +12,26 @@ header {
   top: 0;
   z-index: 2;
 }
+header .navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.8rem;
+  color: bisque;
+  margin: 0;
+  animation-name: titulo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+header .navbar-brand:hover {
+  color: #ccc9e7;
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @media (max-width: 440px) {
   header .headerNavbar {
     display: flex;
@@ -28,31 +48,11 @@ header {
     margin-top: 25px;
   }
 }
-@keyframes titulo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-header h1 {
-  animation-name: titulo;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
 header .headerNavbar {
   padding: 0;
 }
 header .headerNavbar .navbar-nav .nav-item:hover {
   transform: scale(1.1, 1.1);
-}
-header .headerNavbar h1 {
-  margin: 0;
-  color: bisque;
-}
-header .headerNavbar h1:hover {
-  color: #ccc9e7;
 }
 header .headerNavbar img {
   width: 90px;
@@ -91,7 +91,7 @@ main .personas {
   align-items: center;
   justify-content: center;
 }
-main .cardTitle a h3:hover {
+main .cardTitle a h2:hover {
   transform: scale(1.1, 1.1);
 }
 main .form-button:hover {
@@ -101,8 +101,17 @@ main .form-button:active {
   transform: translateY(3px);
 }
 @media (max-width: 992px) {
+  main h1 {
+    font-size: 1.7rem;
+  }
+  main .cardTitle a h2 {
+    font-size: 1.5rem;
+  }
   main .secciones .sectionBody {
     font-size: 0.8rem;
+  }
+  main .secciones .sectionBody a h2 {
+    font-size: 1.4rem;
   }
 }
 main .carousel {
@@ -111,7 +120,7 @@ main .carousel {
   animation-duration: 3s;
 }
 @keyframes animacion {}
-main h2:hover {
+main h1:hover {
   animation-name: animacion;
   animation: bounce;
   animation-duration: 1.5s;
@@ -155,7 +164,7 @@ main .servicios:hover {
   background-color: #60463b;
   color: bisque;
 }
-main .brownBisque, main .cardTitle, main .equipo h3 {
+main .brownBisque, main .cardTitle, main .equipo h2 {
   background-color: #60463b;
   color: bisque;
 }
@@ -172,6 +181,9 @@ main .products {
 }
 main .products img {
   border-radius: 30px;
+}
+main .products h3 {
+  font-size: 1.4rem;
 }
 main .cards-wrapper {
   display: flex;
@@ -204,7 +216,7 @@ main .tituloSede {
   color: bisque;
 }
 @media (max-width: 992px) {
-  main .carousel-item img {
+  main .carouselItem-index img {
     width: 100%;
     height: 100%;
   }
@@ -219,11 +231,23 @@ main .vision {
   color: bisque;
   width: 80%;
 }
-@media (min-width: 993px) {
-  main .carousel-item img {
-    width: 100%;
-    height: 650px;
+@media (min-width: 993px) and (max-width: 1668px) {
+  main .carouselItem-index img {
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+@media (min-width: 1669px) {
+  main .carouselItem-index img {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 993px) {
   main .mision {
     background-color: #2e3138;
     color: bisque;
@@ -238,6 +262,40 @@ main .vision {
 @media (min-width: 768px) {
   main .card img {
     height: 20em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1164px) {
+  main .body1 {
+    padding-bottom: 1rem;
+  }
+  main .body2 {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1164px) {
+  main .body1 {
+    padding-bottom: 1rem;
+  }
+  main .body2 {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 1123px) {
+  main .sectionBody p {
+    font-size: 1.1rem;
+  }
+  main .body2 {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 1350px) {
+  main .sectionBody p {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1660px) {
+  main .sectionBody p {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1400px) {
@@ -343,11 +401,7 @@ a {
   color: bisque;
 }
 
-h1 {
-  font-family: "Libre Baskerville", serif;
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
 }
 

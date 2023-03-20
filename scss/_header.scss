@@ -1,4 +1,30 @@
 header {
+
+  .navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.8rem;
+    color: bisque;
+    margin:0;
+
+      &:hover{
+        color: $lightpurple;
+      }
+
+      animation-name: titulo;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+  }
+
+  @keyframes titulo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
   @media (max-width:440px){
     .headerNavbar{
         display: flex;
@@ -17,21 +43,7 @@ header {
 }
 }
 
-  @keyframes titulo {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 100%;
-    }
-}
-
-h1 {
-    animation-name: titulo;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-}
 
     background-color: $chocolate;
     height: 120px;
@@ -47,13 +59,6 @@ h1 {
         .nav-item:hover {
           transform: scale(1.1, 1.1);
         }
-      }
-      h1 {
-        margin: 0;
-        color: bisque;
-      }
-      h1:hover{
-          color: $lightpurple;
       }
   
       img {
