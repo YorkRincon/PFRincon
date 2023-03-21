@@ -88,6 +88,10 @@ main {
 main h3 {
   font-size: 1.4rem;
 }
+main .tituloProductos {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 main .personas {
   display: flex;
   flex-direction: column;
