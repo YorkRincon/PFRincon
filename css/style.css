@@ -85,6 +85,9 @@ main {
   background-color: bisque;
   color: #2e3138;
 }
+main h3 {
+  font-size: 1.4rem;
+}
 main .personas {
   display: flex;
   flex-direction: column;
@@ -93,6 +96,24 @@ main .personas {
 }
 main .cardTitle a h2:hover {
   transform: scale(1.1, 1.1);
+}
+main .tituloServicios {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .tituloServicios:hover {
+  transform: scale(1.1, 1.1);
+  color: #ccc9e7;
+}
+main .tituloNosotros {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .tituloNosotros:hover {
+  transform: scale(1.1, 1.1);
+  color: #ccc9e7;
 }
 main .form-button:hover {
   transform: translateY(-3px);
@@ -110,7 +131,7 @@ main .form-button:active {
   main .secciones .sectionBody {
     font-size: 0.8rem;
   }
-  main .secciones .sectionBody a h2 {
+  main .secciones .sectionBody h2 {
     font-size: 1.4rem;
   }
 }
@@ -182,9 +203,6 @@ main .products {
 main .products img {
   border-radius: 30px;
 }
-main .products h3 {
-  font-size: 1.4rem;
-}
 main .cards-wrapper {
   display: flex;
   justify-content: center;
@@ -238,11 +256,23 @@ main .vision {
     margin-left: auto;
     margin-right: auto;
   }
+  main .carouselItem-sedes img {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 1669px) {
   main .carouselItem-index img {
     width: 70%;
     height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .carouselItem-sedes img {
+    width: 40%;
+    height: 40%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -257,19 +287,6 @@ main .vision {
     background-color: #2e3138;
     color: bisque;
     width: 40%;
-  }
-}
-@media (min-width: 768px) {
-  main .card img {
-    height: 20em;
-  }
-}
-@media (min-width: 768px) and (max-width: 1164px) {
-  main .body1 {
-    padding-bottom: 1rem;
-  }
-  main .body2 {
-    padding-top: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1164px) {
@@ -361,6 +378,29 @@ main .vision {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .imagenIndex {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .imagenIndex {
+    height: 20em;
+  }
+}
+@media (min-width: 1669px) {
+  .imagenIndex {
+    height: 25em;
+  }
+}
+.imagenProductos {
+  height: 20em;
+  width: 100%;
+}
+.imagenProductos img {
+  border-radius: 9%;
 }
 
 footer {
